@@ -19,11 +19,29 @@
     </header>
     <main class="my-8 container mx-auto">
         <section class="bg-blue-950 my-5">
-            <input id="input-field" type="text" placeholder="search here..." class="input w-full max-w-xs my-8 bg-gray-700 text-white" />
-            <button onclick="handelSearch()" class="btn btn-accent">search</button>
+            <input id="input-field" type="text" placeholder="search here..."
+                class="input w-full max-w-xs my-8 bg-gray-700 text-white" />
+            <button onclick="handleSearch()" class="btn btn-accent">search</button>
+
+            <!-- another search button  -->
+            <input id="search-field" type="text" placeholder="search here"
+                class="input w-full max-w-xs my-8 text-white bg-slate-600 border-cyan-600" />
+            <button onclick="handleSearch2()" class="btn btn-neutral border-cyan-600">search2</button>
         </section>
 
-        <section id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- search result -->
+        <section>
+            <!-- search loading  -->
+            <div id="loading-spinner" class="my-10 text-center hidden">
+                <span class="loading loading-dots loading-lg text-red-700"></span>
+            </div>
+
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            </div>
+            <!-- show all btn -->
+            <div id="showAll-container" class="hidden">
+                <button onclick="" class="btn btn-accent">Show All</button>
+            </div>
         </section>
     </main>
 
