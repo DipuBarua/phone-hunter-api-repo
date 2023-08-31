@@ -14,8 +14,18 @@
 
 <body>
 
-    <header><h1>Hunting Phone</h1></header>
-    <main></main>
+    <header>
+        <h1 class="text-5xl font-bold my-5 text-center">Hunting Phone</h1>
+    </header>
+    <main class="my-8 container mx-auto">
+        <section class="bg-blue-950 my-5">
+            <input id="input-field" type="text" placeholder="search here..." class="input w-full max-w-xs my-8 bg-gray-700 text-white" />
+            <button onclick="handelSearch()" class="btn btn-accent">search</button>
+        </section>
+
+        <section id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        </section>
+    </main>
 
     <script src="JS/phone.js"></script>
 </body>
